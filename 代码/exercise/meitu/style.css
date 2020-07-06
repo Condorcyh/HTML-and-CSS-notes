@@ -1,0 +1,29 @@
+.top-bar {
+  height: 48px;
+  padding: 0 14px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-menu .menu-icon {
+  width: 18px;
+  height: 48px;
+}
+.left-menu .menu-icon li {
+  width: 18px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+}
+.left-menu .menu-icon li:nth-child(1) {
+  top: 18px;
+}
+.left-menu .menu-icon li:nth-child(2) {
+  top: 24px;
+  opacity: 0;
+}
+.left-menu .menu-icon li:nth-child(3) {
+  top: 30px;
+}
+/*# sourceMappingURL=./style.css.map */

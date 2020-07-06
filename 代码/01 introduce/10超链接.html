@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        target属性，用来指定超链接打开的位置
+            可选值：
+                -self：默认值，在当前页面中打开超链接
+                -blank:在新的页面中打开
+    -->
+
+    
+    <a href="07列表.html" target="_self">超链接1</a>  
+    <br><br>
+    <a href="07列表.html" target="_blank">超链接2</a>  
+    <br><br>
+    <a href="#bottom">去底部</a>
+    <br><br>
+    <a href="#p3">去第三个自然段</a>
+    <br><br>
+    <!-- 在开发中，可以将#作为超链接的路径的占位符使用 -->
+    <a href="#">超链接占位符</a>
+    <br><br>
+    <!-- 可以使用javascript:;来作为herf的属性，此时点击这个超链接什么也不会发生 -->
+    <a href="javascript:;">无用超链接</a>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p id="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam deserunt ex eius temporibus excepturi eligendi accusantium, ducimus, saepe obcaecati quasi delectus reiciendis molestias earum perferendis minus voluptatem vitae. Dignissimos, provident.</p>
+
+    <!-- 
+        可以直接将超链接的href属性设置为#，这样点击超链接后页面会转到当前页面的顶部
+        也可以跳转到页面的指定位置，只需将herf的属性设置为：#目标元素的id属性值 
+
+        id属性：唯一不重复
+            -每一个标签都能添加id属性
+            -同一个页面中不能出现重复id属性
+    -->
+    <a id="bottom" href="#">回到顶部</a>
+
+</body>
+</html>

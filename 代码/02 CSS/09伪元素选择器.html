@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            font-size: 50px;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+
+        p::selection{
+            background-color: green;
+        }
+
+        div::before{
+            content:"abc";
+            color: red;
+        }
+
+        div::after{
+            content:"hhh";
+            color: gold;
+        }
+
+        /* 
+            伪元素：表示页面中一些特殊的并不真实存在的元素（特殊的位置）
+                使用"::"开头
+
+                ::first-letter  表示第一个字母
+                ::first-line  表示第一行
+                ::selection  表示选中的内容
+                ::before  表示元素的开始位置
+                ::after  表示元素的最后位置
+                    before和after必须结合content属性来使用
+        */
+    </style>
+
+</head>
+<body>
+
+    <div>hello</div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem harum veniam doloremque! Magnam similique consectetur, id, dolore dignissimos dolorem blanditiis distinctio ullam ducimus alias unde aspernatur odit reiciendis quibusdam. Repudiandae.
+    </p>
+</body>
+</html>

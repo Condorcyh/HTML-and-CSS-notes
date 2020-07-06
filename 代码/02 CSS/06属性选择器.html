@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- 
+        [属性名]选择含有指定属性的元素
+        [属性名=属性值]选择含有指定属性和属性值的元素
+        [属性名^=属性值]选择属性值以属性值开头的元素
+        [属性名$=属性值]选择属性值以属性值开头的元素
+        [属性名*=属性值]选择属性值含有属性值的元素
+     -->
+    <style>
+        p[title$=abc]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>标题</h1>
+    <p title="abc">一二三四五</p>
+    <p title="abcdef">一二三四五</p>
+    <p title="helloabc">一二三四五</p>
+    <p>一二三四五</p>
+</body>
+</html>

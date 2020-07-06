@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        audio标签：用来向页面中引入外部音频文件
+        音视频引入时默认情况下不允许用户自己控制播放和停止
+
+        属性：
+            controls：是否允许用户自动播放，不需要给值
+            autoplay：音频文件是否自动播放(太魔性了)
+                -如果设置了autoplay，则音乐在打开时会自动播放
+                -目前来讲大部分浏览器不会自动对音乐进行播放
+            loop：循环播放
+     -->
+    <audio src="./source/EXO (엑소) - Love Shot.mp3" controls></audio>
+    <br><br>
+    <!-- 除了通过src指定外部文件的路径外，还可以通过source来指定文件 -->
+    <!-- 支持的浏览器会忽略，不支持的会显示错误文字 -->
+    <!-- 可以同时指定多个文件，优先使用第一个，不能用则顺延 -->
+    <!-- 可以有效解决各种不兼容的情况 -->
+    <audio controls>
+        播放错误
+        <source src="./source/MIC Drop (Steve Aoki Remix).mp3">
+    </audio>
+
+    <!-- 老版本的浏览器引入音视频 -->
+    <!-- 缺点：自动播放，禁不掉 -->
+    <embed src="" type="" width="" height="">
+
+    <!-- 使用video标签向网页中引入视频文件，跟audio差不多 -->
+    <video src=""></video>
+
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=i0032qxbi2v" allowFullScreen="true" width="500" height="300"></iframe>
+</body>
+</html>

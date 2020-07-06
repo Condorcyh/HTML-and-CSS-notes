@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易新闻列表</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 统一去除下划线 */
+        a{
+            text-decoration: none;
+        }
+
+        .news-wrapper{
+            /* 设置宽度 */
+            width: 385px;
+            /* 设置高度 */
+            height: 258px;
+            /* 设置背景颜色 */
+            background-color: white;
+            /* 设置居中 */
+            margin: 50px auto;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+        }
+
+        /* 设置news-title */
+        .news-title{
+            /* 为了边框能和文字一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 40px;
+            /* 设置上边框 */
+            border-top:1px solid red;
+            /* 将h2上移，盖住上边框 */
+            margin-top: -1px;
+
+            padding-top: 10px;
+        }
+
+        /* 设置title中超链接的样式 */
+        .news-title a{
+            /* 去除下划线 */
+            text-decoration: none;
+            /* 设置颜色 */
+            color: #40406b;
+            /* 文字加粗 */
+            font-weight: bold;
+            /* 设置上外边距 */
+            margin-top: 10px;
+        }
+
+        /* 设置图片容器的高度 */
+        .news-img{
+            height: 200px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title{
+            /* 向上移动文字 */
+            margin-top: -40px;
+            /* 设置字体颜色 */
+            color: white;
+            /* 设置加粗 */
+            font-weight: bold;
+            /* 设置padding */
+            padding-left: 30px;
+        }
+
+
+        /* 设置新闻列表 */
+        .news-list{
+            /* 设置上外边距 */
+            margin-top: 10px;
+            /* 设置左侧padding */
+            padding-left: 14px;
+            /* 设置项目符号 */
+            list-style: none;
+
+        }
+
+        /* 设置li */
+        .news-list li{
+            /* 设置下外边距 */
+            margin-bottom: 17px;
+        }
+
+        /* 设置li中的文字 */
+        .news-list li a{
+            font-size: 15px;
+            color: #666;
+        }
+
+        /* 通过before伪元素来为每一个li项目添加符号 */
+        .news-list li::before{
+            content: "■";
+            color: silver;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+        .news-list li a:hover{
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 创建新闻列表外侧的容器 -->
+    <div class="news-wrapper">
+        <!-- 创建标题标签 -->
+        <h2 class="news-title">
+            <a href="http://sports.163.com/">体育</a>
+        </h2>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <a href="http://sports.163.com/photoview/05HE0005/167231.html">
+                <img src="./img/03/1.webp" alt="王蔷">
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">
+                    除夕蔷势绽放！中国金花闪耀墨尔本
+                </h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="https://sports.163.com/20/0124/16/F3M0NGK900058782.html">输到抓狂！小威：没想过输王蔷 真想用拳头砸墙</a>
+            </li>
+
+            <li>
+                <a href="https://sports.163.com/20/0124/21/F3MHG7N700058782.html">澳网100胜来了！费德勒鏖战惊天逆转晋级16强</a>
+            </li>
+
+            <li>
+                <a href="https://sports.163.com/20/0124/15/F3LRKN8B00058782.html">徐灿：看到家乡湖北遭受大劫难 能力有限捐出20万</a>
+            </li>
+
+            <li>
+                <a href="https://sports.163.com/20/0124/09/F3L7ME1N00058MJK.html">盈利高手揭比赛投注玄机：玩足彩学会3招可高效赚钱</a>
+            </li>
+
+            <li>
+                <a href="https://sports.163.com/20/0124/08/F3L2NDOR00058MJK.html">新春福利送不停！足彩大神送澳德超德甲赛事解析</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
